@@ -1,0 +1,284 @@
+Win_Manager:
+
+    MainWin:
+
+    Sec_Win:
+
+    Error:
+        
+    Python:
+    SQL:
+    Html:
+    Js:
+    Css:
+    Ruby:
+    
+
+<MainWin>:
+    name: "main"
+
+    GridLayout:
+        cols:1
+
+        GridLayout:
+            rows:4
+
+            Image:
+                source: 'img/icon.png'
+                
+                
+            Label:
+                text: 'Learn Coding'
+                font_size: 35
+
+            Label:
+                text: 'Please Enter Password'
+                size_hint: (0.1, 0.3)
+
+            TextInput:
+                id: passw
+                text: 'Enter Pass...'
+                multiline: False
+                #password: True    # To hide the text
+                size_hint: (0.1, 0.3)
+
+        Button:
+            text: 'Log In'
+            size_hint: (0.5, 0.2)
+            on_release:
+                app.root.current='Second' if passw.text == "ELymane01155" else "error"
+                root.manager.transition.direction = "up"    # When you move, the page goes up
+
+<Sec_Win>:
+    name: 'Second'
+
+    GridLayout:
+        cols:1
+
+        GridLayout:
+            rows:2
+
+            Image:
+                source: 'img/image.jpeg'
+                
+            Label:
+                text: 'Welcome In ELymane App To Learn Coding'
+                font_size: 35
+
+        GridLayout:
+            cols: 2
+            rows: 3
+
+            Button:
+                text: "Python"
+                size_hint: (0.1, 0.1)
+                on_release:
+                    app.root.current= 'python'
+                    root.manager.transition.direction = "right"
+
+            Button:
+                text: "SQL"
+                size_hint: (0.1, 0.1)
+                on_release:
+                    app.root.current= 'sql'
+                    root.manager.transition.direction = "left"
+
+            Button:
+                text: "Html"
+                size_hint: (0.1, 0.1)
+                on_release:
+                    app.root.current= 'html'
+                    root.manager.transition.direction = "right"
+
+            Button:
+                text: "Js"
+                size_hint: (0.1, 0.1)
+                on_release:
+                    app.root.current= 'js'
+                    root.manager.transition.direction = "left"
+
+            Button:
+                text: "Css"
+                size_hint: (0.1, 0.1)
+                on_release:
+                    app.root.current= 'css'
+                    root.manager.transition.direction = "right"
+
+            Button:
+                text: "Ruby"
+                size_hint: (0.1, 0.1)
+                on_release:
+                    app.root.current= 'ruby'
+                    root.manager.transition.direction = "left"
+
+
+        Button:
+            text: 'Go Back'
+            size_hint: (1, 0.3)
+            on_release:
+                app.root.current= 'main'
+                root.manager.transition.direction = "down"    # When you move, the page goes up
+
+
+
+
+<Error>:
+
+    name: 'error'
+
+    GridLayout:
+        cols:1
+        rows:2
+
+        Image:
+            source: 'img/error.jpg'
+            size_hint:(1.5, 1.5)
+        Label:
+            text: 'Password Is Wrong'
+            font_size: 30
+
+    Button:
+        text: 'Try Again'
+        size_hint: (1, 0.1)
+        on_release:
+            app.root.current= 'main'
+            root.manager.transition.direction = "down"    # When you move, the page goes up
+
+
+
+<Python>:
+    name: 'python'
+
+    GridLayout:
+        cols:1
+        rows:2
+
+        Image:
+            source: 'img/python0.png'
+            size_hint:(1.5, 1.5)
+        Label:
+            text: 'Learn Python With ELymane'
+            font_size: 35
+
+    Button:
+        text: 'Go Back'
+        size_hint: (1, 0.1)
+        on_release:
+            app.root.current= 'Second'
+            root.manager.transition.direction = "left"
+    
+
+
+<SQL>:
+    name: 'sql'
+
+    GridLayout:
+        cols:1
+        rows:2
+
+        Image:
+            source: 'img/sql.jpg'
+            size_hint:(1.5, 1.5)
+        Label:
+            text: 'Learn MySQL With ELymane'
+            font_size: 35
+
+    Button:
+        text: 'Go Back'
+        size_hint: (1, 0.1)
+        on_release:
+            app.root.current= 'Second'
+            root.manager.transition.direction = "right"
+    
+
+<Html>:
+    name: 'html'
+
+    GridLayout:
+        cols:1
+        rows:2
+
+        Image:
+            source: 'img/html.jpg'
+            size_hint:(1.5, 1.5)
+        Label:
+            text:'Learn Html With ELymane'
+            font_size: 35
+
+    Button:
+        text: 'Go Back'
+        size_hint: (1, 0.1)
+        on_release:
+            app.root.current= 'Second'
+            root.manager.transition.direction = "left"
+    
+
+<Js>:
+    name: 'js'
+
+    GridLayout:
+        cols:1
+        rows:2
+
+        Image:
+            source: 'img/js.jpg'
+            size_hint:(1.5, 1.5)
+        Label:
+            text:'Learn JavaScript With ELymane'
+            font_size: 35
+
+    Button:
+        text: 'Go Back'
+        size_hint: (1, 0.1)
+        on_release:
+            app.root.current= 'Second'
+            root.manager.transition.direction = "right"
+    
+
+<Css>:
+    name: 'css'
+
+    GridLayout:
+        cols:1
+        rows:2
+
+        Image:
+            source: 'img/css.jpg'
+            size_hint:(1.5, 1.5)
+        Label:
+            text:'Learn Css With ELymane'
+            font_size: 35
+
+    Button:
+        text: 'Go Back'
+        size_hint: (1, 0.1)
+        on_release:
+            app.root.current= 'Second'
+            root.manager.transition.direction = "left"
+
+
+
+<Ruby>:
+    name: 'ruby'
+
+    GridLayout:
+        cols:1
+        rows:2
+
+        Image:
+            source: 'img/Ruby.png'
+            size_hint:(1.5, 1.5)
+        Label:
+            text:'Learn Ruby With ELymane'
+            font_size: 35
+
+    Button:
+        text: 'Go Back'
+        size_hint: (1, 0.1)
+        on_release:
+            app.root.current= 'Second'
+            root.manager.transition.direction = "right"
+
+
+
+

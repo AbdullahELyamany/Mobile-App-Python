@@ -1,0 +1,63 @@
+[INFO   ] Logger: Record log in /storage/emulated/0/python/project/min-app/kivy_app/kivy/Rakwan/code_app/.kivy/logs/kivy_23-01-29_43.txt
+[INFO   ] Kivy: v2.0.0
+[INFO   ] Kivy: Installed at "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/__init__.py"
+[INFO   ] Python: v3.9.7 (default, Oct  9 2021, 08:02:40) 
+[GCC 11.1.0]
+[INFO   ] Python: Interpreter at "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/bin/python3"
+[INFO   ] Factory: 186 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[INFO   ] Window: Provider: sdl2
+[INFO   ] GL: Using the "OpenGL ES 2" graphics system
+[INFO   ] GL: Backend used <sdl2>
+[INFO   ] GL: OpenGL version <b'OpenGL ES 3.2 v1.r22p0-01rel0.9ec4ae29cda192f74d35a11091de4ace'>
+[INFO   ] GL: OpenGL vendor <b'ARM'>
+[INFO   ] GL: OpenGL renderer <b'Mali-T830'>
+[INFO   ] GL: OpenGL parsed version: 3, 2
+[INFO   ] GL: Texture max size <8192>
+[INFO   ] GL: Texture max units <16>
+[INFO   ] Window: auto add sdl2 input provider
+[INFO   ] Window: virtual keyboard not allowed, single mode, not docked
+[INFO   ] Text: Provider: sdl2
+[INFO   ] GL: NPOT texture support is available
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/lang/builder.py", line 705, in _apply_rule
+[WARNING] stderr:     setattr(widget_set, key, value)
+[WARNING] stderr:   File "kivy/weakproxy.pyx", line 35, in kivy.weakproxy.WeakProxy.__setattr__
+[WARNING] stderr:   File "kivy/properties.pyx", line 498, in kivy.properties.Property.__set__
+[WARNING] stderr:   File "kivy/properties.pyx", line 1357, in kivy.properties.ReferenceListProperty.set
+[WARNING] stderr:   File "kivy/properties.pyx", line 1346, in kivy.properties.ReferenceListProperty.check
+[WARNING] stderr: ValueError: Image.size_hint value length is immutable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/storage/emulated/0/python/project/min-app/kivy_app/kivy/Rakwan/code_app/main.py", line 26, in <module>
+[WARNING] stderr:     bd = Builder.load_file('app.kv')
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/lang/builder.py", line 306, in load_file
+[WARNING] stderr:     return self.load_string(data, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/lang/builder.py", line 408, in load_string
+[WARNING] stderr:     self._apply_rule(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/lang/builder.py", line 661, in _apply_rule
+[WARNING] stderr:     child.apply_class_lang_rules(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/uix/widget.py", line 463, in apply_class_lang_rules
+[WARNING] stderr:     Builder.apply(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/lang/builder.py", line 541, in apply
+[WARNING] stderr:     self._apply_rule(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/lang/builder.py", line 710, in _apply_rule
+[WARNING] stderr:     raise BuilderException(rule.ctx, rule.line,
+[WARNING] stderr: kivy.lang.builder.BuilderException: Parser: File "/storage/emulated/0/python/project/min-app/kivy_app/kivy/Rakwan/code_app/app.kv", line 19:
+[WARNING] stderr: ...
+[WARNING] stderr:      17:            Image:
+[WARNING] stderr:      18:                source: 'img/image.jpeg'
+[WARNING] stderr: >>   19:                size_hint: (0.3, 0,3)
+[WARNING] stderr:      20:                
+[WARNING] stderr:      21:            Label:
+[WARNING] stderr: ...
+[WARNING] stderr: ValueError: Image.size_hint value length is immutable
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/lang/builder.py", line 705, in _apply_rule
+[WARNING] stderr:     setattr(widget_set, key, value)
+[WARNING] stderr:   File "kivy/weakproxy.pyx", line 35, in kivy.weakproxy.WeakProxy.__setattr__
+[WARNING] stderr:   File "kivy/properties.pyx", line 498, in kivy.properties.Property.__set__
+[WARNING] stderr:   File "kivy/properties.pyx", line 1357, in kivy.properties.ReferenceListProperty.set
+[WARNING] stderr:   File "kivy/properties.pyx", line 1346, in kivy.properties.ReferenceListProperty.check
+[WARNING] stderr: 
